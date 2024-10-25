@@ -1,0 +1,31 @@
+nodes = {
+    'Ti-isopropoxide': {
+        'atoms': [
+            ('Ti', 0, 0, 0),   # Titanium at the origin
+            ('O', 1.8, 0, 0),  # Oxygen (from isopropoxide group)
+            ('C', 2.6, 1.2, 0),  # Carbon from isopropyl group
+            ('H', 3.2, 1.6, 0),  # Hydrogens of isopropyl group
+        ],
+        'coordination': [
+            (0, 1),  # Ti-O bond
+            (1, 2),  # O-C bond (isopropoxide group)
+            (2, 3),  # C-H bond (one H of isopropyl)
+        ]
+    }
+}
+edges = {
+    '4-nitroimidazole': {
+        'atoms': [
+            ('C', 0, 0, 0),    # Carbon in the imidazole ring
+            ('N', 1.2, 0, 0),  # Nitrogen in the ring
+            ('O', 2.4, 0, 0),  # Oxygen from the nitro group
+            ('H', -0.5, 1.2, 0),  # Hydrogen attached to the imidazole ring
+        ],
+        'coordination': [
+            (0, 1),  # C-N bond in the imidazole ring
+            (1, 2),  # N-O bond from nitro group
+            (0, 3)   # C-H bond (hydrogen in the imidazole ring)
+        ]
+    }
+}
+
